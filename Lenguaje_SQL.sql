@@ -42,6 +42,30 @@ SELECT * FROM world.city;
 USE world;
 SELECT Name FROM world.city;
 
+-- Seleccionamos Varias Columnas en específico
+
+USE world;
+SELECT ID, Name, District FROM world.city;
+
+-- Cambiamos Nombre de Columna
+
+USE Base_01;
+SELECT Nombre as Name FROM Base_01.Usuarios;
+
+-- Cambiamos Nombre de Varias Columnas
+-- Se mostrará en el orden en que marquemos aquí
+
+USE Base_01;
+SELECT ID as Identifier, Nombre as Name, Apellido as Surname FROM Base_01.Usuarios;
+
+-- 21. SENTENCIA WHERE
+
+SELECT * FROM world.country WHERE Nombre = "España";
+SELECT * FROM world.country WHERE Continente = "Europa";
+
+
+
+
 
 
 
