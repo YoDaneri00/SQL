@@ -32,3 +32,18 @@ INSERT INTO Usuarios VALUES (2, 'Emilio', 'Piletas', 'piletas@gmail.com');
 
 -- 20. SENTENCIA SELECT
 
+-- Seleccionamos Toda la información de la Tabla
+
+USE world;
+SELECT * FROM world.city;
+
+-- Seleccionamos Una Columna en específico
+
+USE world;
+SELECT Name FROM world.city;
+
+
+
+
+
+
