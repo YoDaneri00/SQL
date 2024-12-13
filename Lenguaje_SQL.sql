@@ -1,4 +1,4 @@
 -- 17. CREAR UNA BASE DE DATOS CON SQL
 
-CREATE DATABASE <Nombre_Base_Datos>
+CREATE DATABASE <Nombre_Base_Datos>;
 
