@@ -63,11 +63,28 @@ SELECT ID as Identifier, Nombre as Name, Apellido as Surname FROM Base_01.Usuari
 SELECT * FROM world.country WHERE Nombre = "España";
 SELECT * FROM world.country WHERE Continente = "Europa";
 
+-- Condición Numérica
 
+SELECT * FROM world.country WHERE Capital < 150;
+SELECT * FROM world.country WHERE Capital > 1000;
 
+-- Condición Diferente
 
+SELECT * FROM world.country WHERE Region <> "Caribe";
 
+-- 22. SENTENCIA DISTINCT
 
+SELECT DISTINCT(Columna) FROM <Nombre_Base_Datos>.<Nombre_Tabla>;
+SELECT DISTINCT(CodigoPais) FROM world.city;
 
+-- 23. SENTENCIA ORDER BY
+
+SELECT * FROM <Nombre_Base_Datos>.<Nombre_Tabla> ORDER BY <Columna> ASC;
+SELECT * FROM <Nombre_Base_Datos>.<Nombre_Tabla> ORDER BY <Columna> DESC;
+
+USE world;
+SELECT * FROM world.city ORDER BY population;
+
+-- 24. OPERADORES BOOLEANOS
 
 
