@@ -123,13 +123,7 @@ OR Region IN (“Caribe”, “Indonesia”);
 
 SELECT * FROM world.country WHERE Continente NOT IN ("America");
 
-
-
-
-
-
-
-
+-- 26. SENTENCIA BETWEEN
 
 
 
