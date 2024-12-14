@@ -125,5 +125,50 @@ SELECT * FROM world.country WHERE Continente NOT IN ("America");
 
 -- 26. SENTENCIA BETWEEN
 
+SELECT * FROM world.city WHERE poblacion BETWEEN 1 AND 1000000 ORDER BY poblacion ASC;
+
+-- Concatentando Negativa
+
+SELECT * FROM world.city WHERE poblacion NOT BETWEEN 1 AND 1000000;
+
+-- Concatentando AND
+
+SELECT * FROM world.city WHERE poblacion BETWEEN (1 AND 1000000) AND ID BETWEEN (1 AND 1000);
+
+-- 27. SENTENCIA LIKE
+
+-- Empiece S
+
+SELECT * FROM world.countrylanguage WHERE lenguaje LIKE ‘S%’;
+
+-- Termine O
+
+SELECT * FROM world.countrylanguage WHERE lenguaje LIKE ‘%O’;
+
+-- Contenga MA
+
+SELECT * FROM world.countrylanguage WHERE lenguaje LIKE ‘%MA%’;
+
+-- Empiece F & Termine L
+
+SELECT * FROM world.countrylanguage WHERE lenguaje LIKE ‘F%L’;
+
+-- 28. CONCATENAR & SUMAR
+
+-- Concatenar
+
+SELECT Superficie + Poblacion FROM world.country;
+
+-- Sumar
+
+SELECT SUM (Superficie) FROM world.country;
+
+-- 29. SENTENCIA MIN & SENTENCIA MAX & SENTENCIA AVG
+
+
+
+
+
+
 
 
