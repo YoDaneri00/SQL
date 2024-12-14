@@ -163,11 +163,23 @@ SELECT Superficie + Poblacion FROM world.country;
 
 SELECT SUM (Superficie) FROM world.country;
 
--- 29. SENTENCIA MIN & SENTENCIA MAX & SENTENCIA AVG
+-- 29. SENTENCIA COUNT & SENTENCIA MIN & SENTENCIA MAX & SENTENCIA AVG
 
+-- Cantidad de Registros
 
+SELECT COUNT(*) FROM world.city;
 
+-- Valor Mínimo
 
+SELECT MIN(Poblacion) FROM world.city;
+
+-- Valor Máximo
+
+SELECT MAX(Poblacion) FROM world.city;
+
+-- Promedio
+
+SELECT AVG(Poblacion) FROM world.city;
 
 
 
