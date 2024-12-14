@@ -189,8 +189,23 @@ SELECT lenguaje FROM world.countrylanguage GROUP BY lenguaje;
 
 SELECT lenguaje, COUNT(*) FROM world.countrylanguage GROUP BY lenguaje;
 
--- 31. 
+-- 31. FUNCIONES INTERMEDIAS
 
+-- Mayúsculas
+
+SELECT UCASE(nombre) FROM world.city;
+
+-- Nueva Columna Mayúsculas
+
+SELECT *, UCASE(nombre) AS “Mayusculas” FROM world.city;
+
+-- Minúsculas
+
+SELECT LCASE(CodigoPais) FROM world.city;
+
+-- Nueva Columna Minúsculas
+
+SELECT *, LCASE(CodigoPais) AS “Minusculas” FROM world.city;
 
 
 
