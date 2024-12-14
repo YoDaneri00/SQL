@@ -87,4 +87,49 @@ SELECT * FROM world.city ORDER BY population;
 
 -- 24. OPERADORES BOOLEANOS
 
+-- AND
+
+SELECT * FROM world.country WHERE Continente = "Africa" AND Region = "Central";
+
+-- OR
+
+SELECT * FROM world.country WHERE Continente = "Africa" OR Region = "Central";
+
+-- NOT
+
+SELECT * FROM world.country WHERE NOT Region = "Europa Central";
+
+-- 25. SENTENCIA IN
+
+-- En Forma OR
+
+SELECT * FROM world.country WHERE Continente = “Africa” OR Continente = “America”;
+
+-- En Forma IN
+
+SELECT * FROM world.country WHERE Continente IN (“Africa”, “America”);
+
+-- Operadores Concatenados
+
+SELECT * FROM world.country 
+WHERE Continente IN (“Africa”, “America”)
+AND Region IN (“Caribe”, “Indonesia”);
+
+SELECT * FROM world.country 
+WHERE Continente IN (“Africa”, “America”)
+OR Region IN (“Caribe”, “Indonesia”);
+
+-- Todos los Países en un Continente que no sea América
+
+SELECT * FROM world.country WHERE Continente NOT IN ("America");
+
+
+
+
+
+
+
+
+
+
 
