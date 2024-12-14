@@ -181,6 +181,29 @@ SELECT MAX(Poblacion) FROM world.city;
 
 SELECT AVG(Poblacion) FROM world.city;
 
+-- 30. SENTENCIA GROUP BY
+
+SELECT lenguaje FROM world.countrylanguage GROUP BY lenguaje;
+
+-- Contabilizamos Agrupaciones
+
+SELECT lenguaje, COUNT(*) FROM world.countrylanguage GROUP BY lenguaje;
+
+-- 31. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
