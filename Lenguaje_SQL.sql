@@ -242,6 +242,25 @@ SELECT Porcentaje,
 	END 
 AS Condiciones FROM world.countrylanguaje;
 
+-- 33. SENTENCIA UPDATE
+
+-- Genérico
+
+USE <Base_Datos>;
+UPDATE <Tabla> SET <Columna> = <Dato_Actualizado> WHERE <Tabla> = “ID_Dato_Por_Actualizar”;
+
+-- Específico
+
+USE world;
+UPDATE country SET nombre = “El Salvador” WHERE id = “ABW”;
+
+-- Actualizar Por Lotes
+
+USE world;
+UPDATE country SET nombre = “El Salvador” WHERE continente = “Asia”;
+
+-- 34. SENTENCIA ALTER TABLE
+
 
 
 
