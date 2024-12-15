@@ -215,6 +215,34 @@ SELECT Nombre, Distrito, CONCAT(Nombre, “ “, Distrito) FROM world.city;
 
 SELECT Nombre, Distrito, CONCAT_WS(“ “, Nombre, Distrito) FROM world.city;
 
+-- Truncar Decimales
+
+SELECT EsperanzaVida, ROUND(EsperanzaVida, 0) FROM world.country;
+
+-- Contar Caracteres
+
+SELECT Continente, CHAR_LENGTH(Continente) FROM world.country;
+
+-- 32. SENTENCIA CASE
+
+SELECT Porcentaje,
+	CASE
+		WHEN Porcentaje < 10 THEN “Es menor a 10”
+		WHEN Porcentaje > 10 THEN “Es mayor a 10”
+	END 
+AS Condiciones FROM world.countrylanguaje;
+
+-- Colmatando Con ELSE
+
+SELECT Porcentaje,
+	CASE
+		WHEN Porcentaje < 10 THEN “Es menor a 10”
+		WHEN Porcentaje > 10 THEN “Es mayor a 10”
+		ELSE “Es 10”
+	END 
+AS Condiciones FROM world.countrylanguaje;
+
+
 
 
 
