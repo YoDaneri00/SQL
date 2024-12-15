@@ -207,6 +207,14 @@ SELECT LCASE(CodigoPais) FROM world.city;
 
 SELECT *, LCASE(CodigoPais) AS “Minusculas” FROM world.city;
 
+-- Concatenar
+
+SELECT Nombre, Distrito, CONCAT(Nombre, “ “, Distrito) FROM world.city;
+
+-- Concatenar With Separator (WS)
+
+SELECT Nombre, Distrito, CONCAT_WS(“ “, Nombre, Distrito) FROM world.city;
+
 
 
 
