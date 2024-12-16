@@ -261,8 +261,10 @@ UPDATE country SET nombre = “El Salvador” WHERE continente = “Asia”;
 
 -- 34. SENTENCIA ALTER TABLE
 
+USE world;
+ALTER TABLE city ADD COLUMN country VARCHAR(50);
 
-
+-- 35. SENTENCIA DROP & SENTENCIA DELETE
 
 
 
