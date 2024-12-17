@@ -22,3 +22,18 @@ CREATE TABLE Ventas
 
 -- EJERCICIO 3
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
