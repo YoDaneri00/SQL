@@ -30,6 +30,10 @@ SELECT nombre_producto, precio FROM productos WHERE cantidad_stock > 0 AND preci
 
 -- EJERCICIO 5
 
+SELECT * FROM productos ORDER BY precio DESC;
+
+-- EJERCICIO 6
+
 
 
 
