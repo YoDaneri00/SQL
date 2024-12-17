@@ -34,17 +34,7 @@ SELECT * FROM productos ORDER BY precio DESC;
 
 -- EJERCICIO 6
 
+SELECT cliente_id, SUM(monto_venta) AS total_ventas FROM ventas 
+GROUP BY cliente_id ORDER BY total_ventas DESC;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- FINAL SECCION
