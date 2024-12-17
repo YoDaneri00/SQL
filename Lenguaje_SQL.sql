@@ -264,18 +264,31 @@ UPDATE country SET nombre = “El Salvador” WHERE continente = “Asia”;
 USE world;
 ALTER TABLE city ADD COLUMN country VARCHAR(50);
 
--- 35. SENTENCIA DROP & SENTENCIA DELETE
+-- 35. SENTENCIA DELETE & SENTENCIA DROP
 
+-- Eliminar Registro
 
+USE Base1;
+DELETE FROM usuarios WHERE id = 1;
 
+-- Eliminar Todos Datos de Tabla
 
+USE Base1;
+DELETE FROM usuarios;
 
+-- Eliminar Una Columna
 
+USE world;
+ALTER TABLE city DROP COLUMN country;
 
+-- Eliminar Una Tabla
 
+USE world;
+DROP TABLE countrylanguage;
 
+-- Eliminar BBDD
 
+USE world;
+DROP DATABASE Base1;
 
-
-
-
+-- FINAL DE SECCION
