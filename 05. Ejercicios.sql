@@ -22,6 +22,13 @@ CREATE TABLE Ventas
 
 -- EJERCICIO 3
 
+SELECT nombre, nota_final FROM estudiantes WHERE nota_final >= 80;
+
+-- EJERCICIO 4
+
+SELECT nombre_producto, precio FROM productos WHERE cantidad_stock > 0 AND precio < 500;
+
+-- EJERCICIO 5
 
 
 
