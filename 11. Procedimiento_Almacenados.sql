@@ -33,3 +33,7 @@ CREATE PROCEDURE ObtenerProductosPrecio(IN precio_minimo INT)
        		WHERE precio >= precio_minimo;
 	END //
 DELIMITER ;
+
+-- Llamada A Store Procedure
+
+CALL 
