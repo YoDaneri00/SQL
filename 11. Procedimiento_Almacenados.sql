@@ -19,3 +19,10 @@ CREATE PROCEDURE seleccionar_categorias_0()
   END;
 //
 DELIMITER ;
+
+-- Llamada A Store Procedure
+
+CALL seleccionar_categorias_0();
+
+-- 64. Ejercicio (Procedimiento Almacenado)
+
