@@ -36,4 +36,4 @@ DELIMITER ;
 
 -- Llamada A Store Procedure
 
-CALL 
+CALL ObtenerProductosPrecio(5);
