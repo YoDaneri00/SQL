@@ -26,3 +26,10 @@ CALL seleccionar_categorias_0();
 
 -- 64. Ejercicio (Procedimiento Almacenado)
 
+	DELIMITER //
+		CREATE PROCEDURE ObtenerProductosPrecio(IN precio_minimo INT)
+			BEGIN
+				SELECT id, nombre, categoria, precio, stock FROM productos 
+        WHERE precio >= precio_minimo;
+			END //
+	DELIMITER ;
