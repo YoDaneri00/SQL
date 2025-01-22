@@ -16,3 +16,27 @@ DELIMITER ;
 
 -- 70. Vistas (Práctica II)
 
+-- Crear Vista
+
+DELIMITER //
+
+CREATE VIEW ResumenVentas AS
+	SELECT
+	p.Nombre, 
+	p.Precio,
+	v.Cantidad AS Cantidad_Vendida,
+	(p.Precio * v.Cantidad) AS Total_Ventas,
+	v.Fecha
+	FROM productos p
+	JOIN ventas v
+	ON p.ID_Productos = v.ID_Productos
+//
+	
+DELIMETER ;
+
+-- Llamar Vista
+
+SELECT Nombre, Precio, Cantidad_Vendida, Total_Ventas, Fecha
+FROM ResumenVentas
+WHERE Total_Ventas > 10
+ORDER BY Total_Ventas DESC;
