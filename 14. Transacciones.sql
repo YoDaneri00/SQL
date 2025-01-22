@@ -48,3 +48,34 @@
 
 -- 74. RollBacks
 
+	DELIMITER // 
+
+	START TRANSACTION;
+
+	-- Primera Operación (Inserción Datos)
+	INSERT INTO usuarios (nombre, email) VALUES (“Daniel Daneri”, danidaneri@gmail.com);
+
+	-- Verificar Operación (Verificar Error)
+	IF ROW_COUNT() = 0 THEN ROLLBACK;
+	SELECT “Error: La Primera Operación ha Fallado” AS Resultado;
+
+	-- Segunda Operación (Inserción Datos)
+	ELSE
+	INSERT INTO usuarios (nombre, email) VALUES (“Celia Culito”, celiaculito@gmail.com);
+
+	-- Verificar Operación (Verificar Error)
+	IF ROW_COUNT() = 0 THEN ROLLBACK;
+	SELECT “Error: La Segunda Operación ha Fallado” AS Resultado;
+
+	-- Efectuamos Transacción
+	ELSE
+	COMMIT;
+	SELECT “Transacción Completada” AS Resultado;
+
+	-- Finalizamos Condicionales & Delimiter
+	END IF;
+	END IF;
+	END;
+	//
+
+	DELIMITER ;
