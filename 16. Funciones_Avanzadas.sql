@@ -34,9 +34,34 @@
 
 -- 81. Concatenar Datos
 
+-- Espaciado Manual
 
+	USE Empresa;
 
+	SELECT * FROM Empleado;
+	SELECT CONCAT(Nombre_Empleado, “ “, Apellido_Empleado) 
+	AS “Nombre_Completo” FROM Empleado;
 
+-- Espaciado Automático
 
+	SELECT * FROM Empleado;
+	SELECT CONCAT_WS(“ “, Nombre_Empleado, Apellido_Empleado) 
+	AS “Nombre_Completo” FROM Empleado;
 
+-- 83. Fechas
+
+-- Creamos Tabla
+
+	USE Avanzada;
+	
+	SELECT * FROM Productos;
+
+	INSERT INTO Productos (Nombre_Producto, Precio_Producto, Fecha_Garantia) VALUES (“Martillo”, 12.99, “2020-02-02”);
+	INSERT INTO Productos (Nombre_Producto, Precio_Producto, Fecha_Garantia) VALUES (“Destornillador”, 10.99, “2020-02-02”);
+
+-- Añadimos Fecha A Fecha Existente
+
+	SELECT Fecha_Garantia AS “Fecha_Adquisicion”, ADDDATE(Fecha_Garantia, 90) AS “Fecha_Expiración” FROM Productos;
+
+-- 84. Inner Join
 
