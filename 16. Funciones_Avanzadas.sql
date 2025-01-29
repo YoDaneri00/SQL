@@ -65,3 +65,26 @@
 
 -- 84. Inner Join
 
+-- Método Explícito
+
+	SELECT
+		clientes.nombre,
+		clientes.ciudad, 
+		ventas.monto_venta
+	FROM
+		clientes
+	INNER JOIN
+		ventas
+	ON
+		clientes.cliente_id = ventas.cliente_id;
+
+-- Método Implícito
+
+	SELECT
+		clientes.nombre,
+		clientes.ciudad,
+		ventas.monto_venta
+	FROM
+		clientes, ventas
+	WHERE
+		clientes.cliente_id = ventas.cliente_id;
